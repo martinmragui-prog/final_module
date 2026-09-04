@@ -1,0 +1,56 @@
+ID,Name,Category,Ingredients,Method
+1,Vanilla Cake,Cake,"Flour, sugar, eggs, milk, butter, vanilla, baking powder",Mix ingredients and bake at 180°C for 30 minutes.
+2,Chocolate Cake,Cake,"Flour, sugar, cocoa powder, eggs, milk, oil",Mix ingredients and bake at 180°C for 35 minutes.
+3,Red Velvet Cake,Cake,"Flour, sugar, eggs, cocoa, buttermilk, red colouring",Mix ingredients and bake at 180°C for 30 minutes.
+4,Carrot Cake,Cake,"Flour, sugar, carrots, eggs, oil, cinnamon",Mix ingredients and bake at 180°C for 40 minutes.
+5,Lemon Cake,Cake,"Flour, sugar, eggs, lemon juice, milk, butter",Mix ingredients and bake at 180°C for 35 minutes.
+6,Banana Cake,Cake,"Flour, sugar, bananas, eggs, butter, baking powder","Mash bananas, mix ingredients and bake at 180°C for 35 minutes."
+7,Strawberry Cake,Cake,"Flour, sugar, strawberries, eggs, milk, butter",Mix ingredients and bake at 180°C for 35 minutes.
+8,Coffee Cake,Cake,"Flour, sugar, eggs, milk, butter, coffee",Mix ingredients and bake at 180°C for 35 minutes.
+9,Black Forest Cake,Cake,"Flour, sugar, cocoa, eggs, milk, cherries, cream",Bake chocolate cake and decorate with cream and cherries.
+10,Fruit Cake,Cake,"Flour, sugar, eggs, dried fruits, butter, cinnamon",Mix ingredients and bake at 180°C for 45 minutes.
+11,Vanilla Cupcakes,Cupcake,"Flour, sugar, eggs, milk, butter, vanilla",Mix ingredients and bake at 180°C for 20 minutes.
+12,Chocolate Cupcakes,Cupcake,"Flour, sugar, cocoa, eggs, milk, oil",Mix ingredients and bake at 180°C for 20 minutes.
+13,Red Velvet Cupcakes,Cupcake,"Flour, sugar, cocoa, eggs, buttermilk, red colouring",Mix ingredients and bake at 180°C for 20 minutes.
+14,Strawberry Cupcakes,Cupcake,"Flour, sugar, strawberries, eggs, milk, butter",Mix ingredients and bake at 180°C for 20 minutes.
+15,Lemon Cupcakes,Cupcake,"Flour, sugar, eggs, lemon juice, butter",Mix ingredients and bake at 180°C for 20 minutes.
+16,Banana Cupcakes,Cupcake,"Flour, sugar, bananas, eggs, butter","Mash bananas, mix ingredients and bake at 180°C for 20 minutes."
+17,Coffee Cupcakes,Cupcake,"Flour, sugar, eggs, milk, butter, coffee",Mix ingredients and bake at 180°C for 20 minutes.
+18,Coconut Cupcakes,Cupcake,"Flour, sugar, eggs, coconut, milk, butter",Mix ingredients and bake at 180°C for 20 minutes.
+19,Carrot Cupcakes,Cupcake,"Flour, sugar, carrots, eggs, oil, cinnamon",Mix ingredients and bake at 180°C for 20 minutes.
+20,Chocolate Chip Cupcakes,Cupcake,"Flour, sugar, eggs, milk, butter, chocolate chips","Mix ingredients, add chocolate chips and bake at 180°C for 20 minutes."
+21,Chocolate Chip Cookies,Cookie,"Flour, sugar, butter, eggs, chocolate chips","Mix ingredients, form cookies and bake at 180°C for 12 minutes."
+22,Sugar Cookies,Cookie,"Flour, sugar, butter, eggs, vanilla","Mix ingredients, shape cookies and bake at 180°C for 10 minutes."
+23,Oatmeal Cookies,Cookie,"Oats, flour, sugar, butter, eggs","Mix ingredients, shape cookies and bake at 180°C for 12 minutes."
+24,Peanut Butter Cookies,Cookie,"Peanut butter, flour, sugar, eggs, butter",Mix ingredients and bake at 180°C for 12 minutes.
+25,Coconut Cookies,Cookie,"Flour, sugar, coconut, butter, eggs",Mix ingredients and bake at 180°C for 12 minutes.
+26,Ginger Cookies,Cookie,"Flour, sugar, butter, ginger, eggs",Mix ingredients and bake at 180°C for 12 minutes.
+27,Shortbread Cookies,Cookie,"Flour, sugar, butter","Mix ingredients, shape cookies and bake at 170°C for 15 minutes."
+28,Lemon Cookies,Cookie,"Flour, sugar, butter, eggs, lemon",Mix ingredients and bake at 180°C for 12 minutes.
+29,Double Chocolate Cookies,Cookie,"Flour, sugar, cocoa, butter, eggs, chocolate",Mix ingredients and bake at 180°C for 12 minutes.
+30,Almond Cookies,Cookie,"Flour, sugar, almonds, butter, eggs",Mix ingredients and bake at 180°C for 12 minutes.
+31,White Bread,Bread,"Flour, yeast, sugar, salt, water, butter","Mix dough, let it rise and bake at 180°C for 30 minutes."
+32,Brown Bread,Bread,"Whole wheat flour, yeast, salt, water, sugar","Knead dough, let it rise and bake at 180°C for 35 minutes."
+33,Banana Bread,Bread,"Flour, bananas, sugar, eggs, butter",Mix ingredients and bake at 180°C for 45 minutes.
+34,Garlic Bread,Bread,"Bread flour, yeast, garlic, butter, parsley","Prepare dough, add garlic butter and bake at 180°C."
+35,Cinnamon Bread,Bread,"Flour, yeast, sugar, cinnamon, milk, butter","Prepare dough, add cinnamon and bake at 180°C for 35 minutes."
+36,Cheese Bread,Bread,"Flour, yeast, milk, butter, cheese","Prepare dough, add cheese and bake at 180°C for 30 minutes."
+37,Milk Bread,Bread,"Flour, milk, sugar, yeast, butter","Knead dough, let it rise and bake at 180°C for 30 minutes."
+38,French Bread,Bread,"Flour, yeast, salt, water","Knead dough, allow it to rise and bake at 200°C."
+39,Dinner Rolls,Bread,"Flour, yeast, milk, sugar, butter","Make dough, form rolls and bake at 180°C for 20 minutes."
+40,Focaccia,Bread,"Flour, yeast, olive oil, salt, herbs","Prepare dough, add herbs and oil, then bake at 200°C."
+41,Apple Pie,Pastry,"Flour, butter, apples, sugar, cinnamon","Prepare pastry, add apples and bake at 180°C for 40 minutes."
+42,Fruit Tart,Pastry,"Flour, butter, sugar, eggs, mixed fruits","Prepare pastry, add fruit and bake at 180°C."
+43,Croissant,Pastry,"Flour, butter, yeast, milk, sugar","Prepare dough, fold with butter, shape and bake at 200°C."
+44,Cinnamon Rolls,Pastry,"Flour, yeast, sugar, cinnamon, butter, milk","Prepare dough, add cinnamon filling and bake at 180°C."
+45,Danish Pastry,Pastry,"Flour, butter, yeast, sugar, milk, eggs","Prepare laminated dough, shape and bake at 190°C."
+46,Blueberry Muffins,Pastry,"Flour, sugar, blueberries, eggs, milk, butter","Mix ingredients, add blueberries and bake at 180°C for 25 minutes."
+47,Apple Turnovers,Pastry,"Puff pastry, apples, sugar, cinnamon",Fill pastry with apples and bake at 190°C for 20 minutes.
+48,Cream Puffs,Pastry,"Flour, eggs, butter, water, cream","Prepare pastry, bake until golden and fill with cream."
+49,Chocolate Eclairs,Pastry,"Flour, eggs, butter, water, chocolate, cream","Bake pastry shells, fill with cream and cover with chocolate."
+50,Puff Pastry,Pastry,"Flour, butter, water, salt",Prepare laminated dough and bake at 200°C until golden.
+51,Sponge Cake,cakes,- 2 cups all-purpose flour- 1 cup sugar- 4 eggs- 1/2 cup butter- 1/2 cup milk- 2 teaspoons baking powder- 1 teaspoon vanilla essence,"1. Preheat the oven to 180°C.2. Grease a cake tin.3. Beat the eggs and sugar until light and fluffy.4. Add melted butter, milk, and vanilla essence.5. Add flour and baking powder.6. Mix gently until smooth.7. Pour the batter into the cake tin.8. Bake for 30–35 minutes.9. Allow the cake to cool before serving."
+52,sponge cake,cake,,
+53,Apple Pie,Pastry,"Flour, butter, apples, sugar, cinnamon","Prepare pastry, add apples and bake at 180°C for 40 minutes."
+54,,,,
+55,Vanilla Cupcake,Cupcake,"flour, baking powder, butter, sugar, eggs, vanilla essence",do some baking
