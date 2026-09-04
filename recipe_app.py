@@ -232,9 +232,10 @@ from tkinter import messagebox, ttk
 
 
 class RecipeForm(tk.Toplevel):
-    def __init__(self, parent, categories, recipe=None, on_save=None):
+    def __init__(self, parent, categories, recipe=None, on_save=None, on_delete=None):
         super().__init__(parent)
         self.on_save = on_save
+        self.on_delete = on_delete
         self.recipe_id = recipe[0] if recipe else None
         self.title("Edit recipe" if recipe else "Add recipe")
         self.geometry("500x560")
@@ -275,6 +276,8 @@ class RecipeForm(tk.Toplevel):
         buttons.pack(fill="x", pady=(4, 0))
         ttk.Button(buttons, text="Cancel", command=self.destroy).pack(side="right", padx=(8, 0))
         ttk.Button(buttons, text="Save recipe", style="Accent.TButton", command=self.save).pack(side="right")
+        if self.recipe_id:
+            ttk.Button(buttons, text="Delete recipe", style="Danger.TButton", command=self.delete).pack(side="left")
         self.fields["Recipe name"].focus_set()
 
     def save(self):
@@ -287,6 +290,12 @@ class RecipeForm(tk.Toplevel):
             return
         self.on_save(self.recipe_id, values)
         self.destroy()
+
+    def delete(self):
+        recipe_name = self.fields["Recipe name"].get().strip()
+        if messagebox.askyesno("Delete recipe", f"Delete {recipe_name}?", parent=self):
+            self.on_delete(self.recipe_id)
+            self.destroy()
 
 
 class RecipeApp(tk.Tk):
@@ -308,6 +317,8 @@ class RecipeApp(tk.Tk):
         style.map("TButton", background=[("active", "#d8e1e9")])
         style.configure("Accent.TButton", background="#d86b45", foreground="white")
         style.map("Accent.TButton", background=[("active", "#bc5434")])
+        style.configure("Danger.TButton", background="#f3d9d5", foreground="#a33b2e")
+        style.map("Danger.TButton", background=[("active", "#e9beb7")])
         style.configure("Treeview", rowheight=42, font=("Segoe UI", 10), background="white", fieldbackground="white", foreground="#24313d", borderwidth=0)
         style.configure("Treeview.Heading", font=("Segoe UI", 9, "bold"), background="#edf1f4", foreground="#52606d", relief="flat", padding=8)
         style.map("Treeview", background=[("selected", "#f6d8ca")], foreground=[("selected", "#17212b")])
@@ -419,7 +430,7 @@ class RecipeApp(tk.Tk):
     def edit(self):
         recipe = self.selected()
         if recipe:
-            RecipeForm(self, self.get_categories(), recipe, self.save_recipe)
+            RecipeForm(self, self.get_categories(), recipe, self.save_recipe, self.delete_recipe)
 
     def get_categories(self):
         cursor.execute("SELECT DISTINCT category FROM recipes WHERE category IS NOT NULL AND category != '' ORDER BY category")
@@ -436,9 +447,12 @@ class RecipeApp(tk.Tk):
     def delete(self):
         recipe = self.selected()
         if recipe and messagebox.askyesno("Delete recipe", f"Delete {recipe[1]}?", parent=self):
-            cursor.execute("DELETE FROM recipes WHERE id = ?", (recipe[0],))
-            conn.commit()
-            self.refresh()
+            self.delete_recipe(recipe[0])
+
+    def delete_recipe(self, recipe_id):
+        cursor.execute("DELETE FROM recipes WHERE id = ?", (recipe_id,))
+        conn.commit()
+        self.refresh()
 
     def export_csv(self):
         cursor.execute("SELECT id, name, category, ingredients, method FROM recipes ORDER BY id ASC")
